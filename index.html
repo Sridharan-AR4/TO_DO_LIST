@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO_DO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" id="navigationbar">
+        <h1>TADOW</h1>
+    </nav>
+    <div class="container">
+        <div class="todo_item">
+            <h3>LEETCODE</h3>
+            <p>Before : 7/8/2024</p>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore porro doloribus voluptates
+                quaerat consequatur architecto ab? Voluptas laudantium quisquam commodi totam eaque officia autem ipsum
+                recusandae deleniti porro. Nobis?</h5>
+                
+            </div>
+        </div>
+        <div class="over_lay" id="overlay">
+            
+        </div>
+        <div class="popup_box_overlay">
+        <div class="popup_box" id="popupbox">
+            <h3>Add task</h3>
+            <form>
+                <input type="text" placeholder="Enter todo task name" class="input_taskname" id="inputtaskname">
+                <input type="date" placeholder="select deadline" class="input_taskdate" id="inputtaskdate">
+                <textarea type="text" placeholder="description" class="input_desc" id="inputdesc"></textarea>
+                <button class="add_btn" id="addbtn">Add task</button>
+                <button class="cancel_btn" id="cancelbtn">Cancel</button>
+            </form>
+        </div>
+        </div>
+    <button class="popup_btn" id="popupbtn">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

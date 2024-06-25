@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      ;
+}
+.navbar{
+    padding: 10px;
+    background-color: rgb(75, 231, 242);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.todo_item{
+    width: 300px;
+    height: 230px;
+    background-color: black;
+    padding: 10px;
+    width: 25%;
+    border-radius: 20px;
+    
+}
+.todo_item h3{
+    color: rgb(75, 231, 242);
+}
+.todo_item p{
+    color: rgb(75, 231, 242);
+    padding-top: 10px;
+}
+.todo_item h5{
+    color: white;
+    padding-top: 20px;
+}
+.popup_btn{
+    width:70px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: rgb(75, 231, 242);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 30px;
+}
+.over_lay{
+    
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    
+}
+.popup_box_overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    
+}
+.popup_box{
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(75, 231, 242);
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    
+}
+.popup_box input{
+    background: transparent;
+    border: none;
+    border-bottom: solid 2px black;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.popup_box input::placeholder{
+    color: black;
+}
+
+.popup_box textarea{
+    background: transparent;
+    border: none;
+    border: solid 2px black;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.popup_box textarea::placeholder{
+    color: black;
+}
+.popup_box input:focus{
+    outline: none;
+}
+.popup_box textarea:focus{
+    outline: none;
+}
+.add_btn{
+    background-color: rgb(75, 231, 242);
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.cancel_btn{
+    background-color: rgb(75, 231, 242);
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+}
