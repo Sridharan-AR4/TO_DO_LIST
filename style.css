@@ -9,11 +9,13 @@ body{
         font-style: normal;
       }
       ;
-      background-color: rgb(229, 244, 247);
+      width: 100%;
+      background: rgb(217,243,243);
+      background: linear-gradient(90deg, rgba(217,243,243,1) 0%, rgba(186,232,240,1) 20%, rgba(160,225,236,1) 40%, rgba(164,229,240,1) 60%, rgba(153,231,239,1) 80%, rgba(145,211,211,1) 100%);
 }
 .navbar{
-    padding: 12px;
-    background-color: rgb(75, 231, 242);
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
 }
@@ -33,10 +35,10 @@ body{
     
 }
 .todo_item h3{
-    color: rgb(75, 231, 242);
+    color: #98ffff;
 }
 .todo_item p{
-    color: rgb(75, 231, 242);
+    color: #98ffff;
     padding-top: 10px;
 }
 .todo_item h5{
@@ -46,18 +48,21 @@ body{
 .todo_item button{
     padding: 5px;
     border-radius: 10px;
-    background-color: rgb(75, 231, 242);
+    background-color: #98ffff;
     margin-top: 15px;
 }
 .popup_btn{
     width:70px;
     height: 70px;
     border-radius: 25px;
-    background-color: rgb(75, 231, 242);
+    background-color: #98ffff;
     position: fixed;
     bottom: 25px;
     right: 25px;
     font-size: 30px;
+}
+.popup_btn:hover{
+    background-color: rgb(229, 244, 247);
 }
 .over_lay{
     
@@ -86,7 +91,7 @@ body{
     padding: 20px;
     width: 300px;
     height: 200px;
-    background-color: rgb(75, 231, 242);
+    background-color: #98ffff;
     border-radius: 20px;
     position: absolute;
     display: none;
@@ -126,31 +131,31 @@ body{
     outline: none;
 }
 .add_btn{
-    background-color: rgb(75, 231, 242);
+    background-color: #98ffff;
     padding: 5px;
     font-size: 15px;
     border-radius: 10px;
 }
 .cancel_btn{
-    background-color: rgb(75, 231, 242);
+    background-color: #98ffff;
     padding: 5px;
     font-size: 15px;
     border-radius: 10px;
 }
 button:hover {
     cursor: pointer;
-    background-color: rgb(0, 175, 188);
+    background-color: rgb(229, 244, 247);
     color: black;
 }
 .greeting{
     display: flex;
-    width: 100%;
+    
     justify-content: center;
     padding: 10px;
     margin: 10px;
 }
 .greetingtext{
-    background: linear-gradient(90deg,rgb(0, 238, 255),rgb(255, 0, 195));
+    background: linear-gradient(90deg,rgb(1, 109, 136),rgb(249, 72, 208));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -162,9 +167,9 @@ li{
     border-radius: 20px;
     padding: 12px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 700;
-    background-color: rgb(75, 231, 242);
+    background-color: #98ffff;
 }
 .navbtn:hover{
     background-color:  rgb(229, 244, 247);

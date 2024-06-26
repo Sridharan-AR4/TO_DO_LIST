@@ -9,25 +9,14 @@ body{
         font-style: normal;
       }
       ;
-      background-color: rgb(229, 244, 247);
+      background: rgb(217,243,243);
+background: linear-gradient(90deg, rgba(217,243,243,1) 0%, rgba(186,232,240,1) 20%, rgba(160,225,236,1) 40%, rgba(164,229,240,1) 60%, rgba(153,231,239,1) 80%, rgba(145,211,211,1) 100%);
 }
 .navbar{
     padding: 12px;
-    background-color: rgb(75, 231, 242);
+    background-color: rgb(0, 0, 0);
 }
-.greeting{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-}
-.greetingtext{
-    background: linear-gradient(90deg,rgb(0, 238, 255),rgb(255, 0, 195));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .loginform{
     display: flex;
     flex-direction: column;

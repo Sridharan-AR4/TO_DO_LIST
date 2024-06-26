@@ -4,57 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO_DO</title>
+    <title>Todo (-.-)</title>
     <link rel="icon" href="images/planning.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <nav class="navbar" id="navigationbar">
         <ul style="display: flex;">
         <li style="display: flex;"><img src="images/to-do.png" style="width: 60px; height: 60px;"></li>
-        <li style="display: flex; align-items: center; margin-left: 10px;"><h1>TADOW</h1></li>
-        </ul>
-        <ul style="display: flex;">
-            <li><button class="navbtn" onclick="addtask()">New Task</button></li>
-            <a href="login.html"><li><button class="navbtn">Logout</button></li></a>
+        <li style="display: flex; align-items: center; margin-left: 10px;"><h1 style="color: #98ffff;">TODO_APP</h1></li>
         </ul>
     </nav>
-    <div class="greeting">
-        <h2 class="greetingtext">Hey! Let's tackle today's tasks with a smile!</h2>
+    <div class="loginform">
+        <h1>WELCOME!</h1>
+        <p>Please login below </p>
+        <form class="lgform" action="main.html">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter password" required>
+            <button type="submit">Login</button>
+        </form>
     </div>
-    <div class="container">
-        <div class="todo_item">
-            <h3>LEETCODE</h3>
-            <p>7/8/2024</p>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore porro doloribus voluptates
-                quaerat consequatur architecto ab? Voluptas laudantium quisquam commodi totam eaque officia autem ipsum
-                recusandae deleniti porro. Nobis?</h5>
-            <button id="deletetodoitem" onclick="deleteitem(event)">delete</button>
-            </div>
-        </div>
-        <div class="over_lay" id="overlay">
-            
-        </div>
-        <div class="popup_box_overlay" id="popupboxoverlay">
-        <div class="popup_box" id="popupbox">
-            <h3>Add task</h3>
-            <form id="taskform">
-                <input type="text" placeholder="Enter todo task name" class="input_taskname" id="inputtaskname" required>
-                <input type="date" placeholder="select deadline" class="input_taskdate" id="inputtaskdate" required>
-                <textarea type="text" placeholder="description" class="input_desc" id="inputtaskdesc" required minlength="10" maxlength="400"></textarea>
-                <button type="submit" class="add_btn" id="addbtn">Add task</button>
-                <button type="button" class="cancel_btn" id="cancelbtn">Cancel</button>
-            </form>
-        </div>
-        </div>
-    <button class="popup_btn" id="popupbtn" onclick="addtask()">+</button>
-    <script src="script.js"></script>
 </body>
-
 </html>
