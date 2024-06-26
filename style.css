@@ -9,22 +9,26 @@ body{
         font-style: normal;
       }
       ;
+      background-color: rgb(229, 244, 247);
 }
 .navbar{
-    padding: 10px;
+    padding: 12px;
     background-color: rgb(75, 231, 242);
+    display: flex;
+    justify-content: space-between;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    
 }
 .todo_item{
     width: 300px;
     height: 230px;
     background-color: black;
-    padding: 10px;
-    width: 25%;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
     border-radius: 20px;
     
 }
@@ -38,6 +42,12 @@ body{
 .todo_item h5{
     color: white;
     padding-top: 20px;
+}
+.todo_item button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(75, 231, 242);
+    margin-top: 15px;
 }
 .popup_btn{
     width:70px;
@@ -69,6 +79,7 @@ body{
     align-items: center;
     position: absolute;
     top: 0;
+    display: none;
     
 }
 .popup_box{
@@ -125,4 +136,36 @@ body{
     padding: 5px;
     font-size: 15px;
     border-radius: 10px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 175, 188);
+    color: black;
+}
+.greeting{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.greetingtext{
+    background: linear-gradient(90deg,rgb(0, 238, 255),rgb(255, 0, 195));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+li{
+    list-style: none;
+}
+.navbtn{
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 700;
+    background-color: rgb(75, 231, 242);
+}
+.navbtn:hover{
+    background-color:  rgb(229, 244, 247);
 }

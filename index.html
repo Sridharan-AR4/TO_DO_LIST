@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO_DO</title>
+    <link rel="icon" href="images/planning.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,34 +16,44 @@
 
 <body>
     <nav class="navbar" id="navigationbar">
-        <h1>TADOW</h1>
+        <ul style="display: flex;">
+        <li style="display: flex;"><img src="images/to-do.png" style="width: 60px; height: 60px;"></li>
+        <li style="display: flex; align-items: center; margin-left: 10px;"><h1>TADOW</h1></li>
+        </ul>
+        <ul style="display: flex;">
+            <li><button class="navbtn" onclick="addtask()">New Task</button></li>
+            <a href="login.html"><li><button class="navbtn">Logout</button></li></a>
+        </ul>
     </nav>
+    <div class="greeting">
+        <h2 class="greetingtext">Hey! Let's tackle today's tasks with a smile!</h2>
+    </div>
     <div class="container">
         <div class="todo_item">
             <h3>LEETCODE</h3>
-            <p>Before : 7/8/2024</p>
+            <p>7/8/2024</p>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore porro doloribus voluptates
                 quaerat consequatur architecto ab? Voluptas laudantium quisquam commodi totam eaque officia autem ipsum
                 recusandae deleniti porro. Nobis?</h5>
-                
+            <button id="deletetodoitem" onclick="deleteitem(event)">delete</button>
             </div>
         </div>
         <div class="over_lay" id="overlay">
             
         </div>
-        <div class="popup_box_overlay">
+        <div class="popup_box_overlay" id="popupboxoverlay">
         <div class="popup_box" id="popupbox">
             <h3>Add task</h3>
-            <form>
-                <input type="text" placeholder="Enter todo task name" class="input_taskname" id="inputtaskname">
-                <input type="date" placeholder="select deadline" class="input_taskdate" id="inputtaskdate">
-                <textarea type="text" placeholder="description" class="input_desc" id="inputdesc"></textarea>
-                <button class="add_btn" id="addbtn">Add task</button>
-                <button class="cancel_btn" id="cancelbtn">Cancel</button>
+            <form id="taskform">
+                <input type="text" placeholder="Enter todo task name" class="input_taskname" id="inputtaskname" required>
+                <input type="date" placeholder="select deadline" class="input_taskdate" id="inputtaskdate" required>
+                <textarea type="text" placeholder="description" class="input_desc" id="inputtaskdesc" required minlength="10" maxlength="400"></textarea>
+                <button type="submit" class="add_btn" id="addbtn">Add task</button>
+                <button type="button" class="cancel_btn" id="cancelbtn">Cancel</button>
             </form>
         </div>
         </div>
-    <button class="popup_btn" id="popupbtn">+</button>
+    <button class="popup_btn" id="popupbtn" onclick="addtask()">+</button>
     <script src="script.js"></script>
 </body>
 
